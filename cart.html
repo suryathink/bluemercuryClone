@@ -91,7 +91,7 @@
    
     <div id="showPrice">
         <h2>Total Items <span id="cart-count"> 0</span></h2>
-        <h2>Total Price ₹ <span id="cart-price">0</span></h2>
+        <h2>Total Price $ <span id="cart-price">0</span></h2>
 
         <a id="buy" href="payment.html">BUY The PRODUCT</a>
     </div>
@@ -136,7 +136,7 @@
 
             var price = document.createElement("p");
             price.setAttribute("class", "price");
-            price.textContent = "Rs " + elem.price;
+            price.textContent = "$ " + elem.price;
             sum += elem.price;
 
             console.log(image, name, price);
