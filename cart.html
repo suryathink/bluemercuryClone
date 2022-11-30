@@ -29,7 +29,7 @@
         }
 
 
-        img {
+        .imgCart {
             width: 100%;
         }
 
@@ -79,16 +79,14 @@
 </head>
 
 <body>
-
-    
    
-        <button>
-            <a href="product.html" target="_blank">Go to Home</a>
+        <button class="btn">
+            <a  href="product.html" target="_blank">Go to Home</a>
     
         </button>
     
-        <button>
-            <a href="cart.html" target="_blank">Go to Cart </a>
+        <button class="btn" >
+            <a  href="cart.html" target="_blank">Go to Cart </a>
         </button>
    
     <div id="showPrice">
@@ -128,6 +126,7 @@
 
 
             var image = document.createElement("img");
+            image.setAttribute("class","imgCart")
             image.setAttribute("src", elem.image_url)
             image.setAttribute("alt", elem.name);
 
