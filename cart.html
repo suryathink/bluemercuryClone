@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+
+       
+        button {
+            width: 20%;
+            border-radius: 10px;
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+
+        #parent>div {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            text-align: center;
+        }
+
+        #form1{
+            text-align: center;
+        }
+
+
+        img {
+            width: 100%;
+        }
+
+        #showPrice {
+            text-align: center;
+        }
+
+        #parent {
+            /* border: 2px solid red; */
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .price {
+            text-align: center;
+        }
+
+        /* .Remove{
+            display: flex;
+            align-items: center;
+
+        } */
+
+        .Remove{
+            background-color: grey;
+            width: 70%;
+        }
+
+        button>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .cart {
+            width: 50%;
+            border-radius: 10px;
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+   
+        <button>
+            <a href="product.html" target="_blank">Go to Home</a>
+    
+        </button>
+    
+        <button>
+            <a href="cart.html" target="_blank">Go to Cart </a>
+        </button>
+   
+    <div id="showPrice">
+        <h2>Total Items <span id="cart-count"> 0</span></h2>
+        <h2>Total Price ₹ <span id="cart-price">0</span></h2>
+
+        <a id="buy" href="payment.html">BUY The PRODUCT</a>
+    </div>
+
+    <form id="form1" action="">
+        <input id="promocode" type="text" placeholder="Apply Promocode ">
+        <input id="submit2" type="submit" value="Submit" />
+    </form>
+
+  <br/>
+    <div id="parent">
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    let sum = 0;
+    document.querySelector("form").addEventListener("submit", Applydiscount);
+    let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+    displayProducts();
+
+
+    function displayProducts() {
+        document.getElementById("cart-count").textContent = cartArr.length;
+
+        cartArr.map(function (elem, index) {
+
+            var div = document.createElement("div");
+
+
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url)
+            image.setAttribute("alt", elem.name);
+
+            var name = document.createElement("h5");
+            name.setAttribute("class", "name");
+            name.textContent = elem.name;
+
+
+            var price = document.createElement("p");
+            price.setAttribute("class", "price");
+            price.textContent = "Rs " + elem.price;
+            sum += elem.price;
+
+            console.log(image, name, price);
+
+            var Remove = document.createElement("button");
+            Remove.setAttribute("class", "Remove");
+            Remove.textContent = "Remove Item From Cart";
+            Remove.addEventListener("click", function () {
+                rem(elem, index);
+            })
+            document.getElementById("cart-price").innerText = sum;
+
+            div.append(image, name, price, Remove);
+
+            document.getElementById("parent").append(div);
+        })
+    }
+
+    function rem(elem, index) {
+        document.querySelector("#parent").textContent = "";
+        cartArr.splice(index, 1);
+        sum = sum - elem.price;
+        localStorage.setItem("cart", JSON.stringify(cartArr));
+        displayProducts();
+        window.location.reload();
+    }
+
+
+
+    function Applydiscount() {
+        event.preventDefault()
+        var promo = document.getElementById("promocode").value;
+        if (promo == "masai30") {
+            sum = sum - ((sum * 30) / 100);
+            alert("Congrats You Received 30% Discount")
+        }
+        document.getElementById("cart-price").textContent = sum;
+        document.getElementById("promocode").value = "";
+    }
+</script>
