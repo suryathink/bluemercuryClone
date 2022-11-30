@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+
+    <style>
+        #btn {
+            display: flex;
+            width: 100%;
+            gap: 140px;
+            /* align-items: flex-start; */
+            justify-content: center;
+            /* border: 2px solid red; */
+            /* background-color: aqua; */
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form {
+            width: 400px;
+            text-align: center;
+            box-shadow: 0px 0px 20px rgb(221, 210, 210);
+            padding: 20px;
+        }
+
+        form input {
+            width: 97%;
+            display: block;
+            border: 2px solid;
+            padding: 10px 5px;
+            margin: 40px 0;
+            font-size: 15px;
+        }
+
+        input[type=date] {
+            width: 97%;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            border: 1px solid;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 500;
+
+        }
+
+        button>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        button {
+            width: 20%;
+            border-radius: 10px;
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="btn">
+        <button>
+            <a href="product.html" target="_blank">Go to Home</a>
+
+        </button>
+
+        <button>
+            <a href="cart.html" target="_blank">Go to Cart </a>
+        </button>
+    </div>
+
+    <h1 id="payment-details">Enter Your Payment Details</h1>
+    <form action="">
+        <input type="name" id="name" placeholder="Name">
+        <input type="number" id="card_no" placeholder="Enter Card No:">
+        <input type="number" id="cvv" placeholder="Enter CVV">
+        <input type="text" id="address" placeholder="Enter Address">
+        <input type="submit" id="submit" value="submit">
+    </form>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", function () {
+        event.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let card_no = document.getElementById("card_no").value;
+        let cvv = document.getElementById("cvv").value;
+        let address = document.getElementById("address");
+
+        if (name == "" || card_no == "" || cvv == "" || address.value == "") {
+            alert("Enter Field Correctly!");
+        }
+        else {
+            window.location.href = "otp.html";
+        }
+    });
+</script>
