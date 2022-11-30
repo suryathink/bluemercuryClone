@@ -1,4 +1,6 @@
- var mensData = [
+var cartArr= JSON.parse(localStorage.getItem("cart")) || [];
+document.getElementById("cart-count").textContent = cartArr.length;
+var mensData = [
     {
       image_url:
         "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060552905975-1_550x.jpg?v=1669131249",
@@ -253,7 +255,6 @@
 
   //SuryaCode
   var cartArr= JSON.parse(localStorage.getItem("cart")) || [];
-
    function addToCart(product){
     console.log(product);
     // console.log(object);
@@ -261,6 +262,7 @@
         localStorage.setItem("cart",JSON.stringify(cartArr));
         alert("Item Added to Cart")
       document.getElementById("cart-count").textContent = cartArr.length;
+      // window.location.reload();
     // }
    }
   
