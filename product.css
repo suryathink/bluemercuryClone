@@ -1,3 +1,109 @@
+/* Navbar css */
+body {
+    font-family: "Montserrat Light", sans-serif;
+}
+#navigation-links {
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+.heading_one {
+    display: flex;
+    margin-top: inherit;
+}
+.heading_one>div:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    color : #12284c;
+    font-weight: 400;
+}
+#navigation-links>div:nth-child(1) {
+    flex-grow: 1;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    height: 50px;
+}
+#shoplink{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color : #12284c;
+    /* color: rgba(18, 40, 76); */
+}
+i{
+    margin-top:8px ;
+    cursor: pointer;
+
+}
+.productlink{
+    text-decoration: none;
+    font-weight:100;
+    color: rgba(18, 40, 76, 0.8);
+    font-size: 12px;
+    line-height: 24px;
+    font-style: normal;
+    background-color: white;
+    border: none;
+    
+}
+.productlink1{
+width: 158px;
+}
+a:hover {
+    color: rgba(18, 40, 76);
+    font-weight: 400;
+}
+#shop {
+    text-decoration: none;
+}
+button {
+    border: none;
+    background: none;
+}
+
+#shop_hover {
+    width: 90%;
+    display: none;
+    margin: auto;
+    grid-template-columns: 200px 50px 200px 200px 300px;
+    padding-left: 200px;
+    position: fixed;
+    top: 140px;
+    z-index: 2;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+
+#shop_hover a {
+    text-decoration: none;
+    color: rgba(18, 40, 76, 0.6);
+    font-size: 14px; 
+}
+
+#shop_hover a:hover {
+    color: #12284c;
+    size: 10px;
+  }
+.two {
+    width: 0%;
+    height: 410px;
+    border: .1px solid #E0E0E0;
+}
+
+/* Main code css */
+
 h1{
     color: #12284c;
     font-family: Montserrat Regular,sans-serif;
@@ -41,10 +147,10 @@ img{
 button{
   width: 32%;
 }
-button > a{
+/* button > a{
     text-decoration: none;
     color:white ;
-}
+} */
 hr{
     width: 997px;
 }
@@ -85,6 +191,7 @@ label{
     align-items: center;
 }
 .main1{
+    margin-top: 2%;
     display: flex;
     justify-content: space-around;
 }
@@ -326,9 +433,9 @@ body:not(.is-tabbing) button:focus, body:not(.is-tabbing) input:focus, body:not(
 .bag{
     margin-left: 10%;
 }
-.cartcount12{
+/* .cartcount12{
 margin-left: 102%;
-}
+} */
 .name{
     margin: 0px;
 }
@@ -343,6 +450,113 @@ margin-left: 102%;
 }
 
 
+/* Product footer css */
+.footer-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 30px;
+    border-top: 2px solid #dcdcdc;
+}
 
+.newsletter {
+    margin: 0px 20px;
+    max-width: 50ch;
+    min-width: 30ch;
+    line-height: 30px;
+}
 
+.icons {
+    display: flex; 
+    justify-content: space-between;
+    max-width: 70%;
+    /* margin: auto; */
+    /* font-size: 20px; */
+    color: #12284c;
+}
 
+.footer-navwrap {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: space-between;
+    min-width: 600px;
+}
+
+.footer-navwrap > * {
+    justify-items: space-between;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    color: #12284c;
+    font-weight: normal;
+}
+
+.footer-navwrap h2 {
+    font-weight: normal;
+    font-size: 12px;
+    font-family: Montserrat light, sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-navwrap > div > * > * {
+     margin: 5px auto; 
+}
+
+.footer-navwrap ul,
+.footer-navwrap li a {
+    color: #12284c;
+    list-style-type: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.footer-mail {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #12284c;
+}
+
+.footer-mail:focus {
+    outline: none;
+}
+
+#arrow-submit-btn {
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    background-color: white;
+}
+
+#arrow-submit-btn:hover {
+    cursor: pointer;
+}
+a{
+    font-size: 14px;
+}
+p{
+    font-size: 15px;
+    color: #12284c;
+}
+#hide-overlay {
+    color: #12284c;
+    border: 2px solid #12284c;
+    border-radius: 10px;
+    width: 45%;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#hide-overlay:hover {
+    cursor: pointer;
+    background-color: #12284c;
+    color: white;
+}
+.icons img{
+    width: 25px;
+    margin-left:-5px ;
+    color: #12284c;
+}
