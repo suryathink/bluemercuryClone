@@ -959,7 +959,7 @@
         alert("Fill All Details")
       } else {
         nameArr.push(obj);
-        alert("Account Created Successfully")
+        alert("Account Created Successfully, You will be redirected to login Page!")
       }
   
   
@@ -971,6 +971,8 @@
       document.getElementById("CreateAccountFirstName").value = null;
       document.getElementById("Creat_LastName").value = null;
       document.getElementById("Creat_Password").value=null;
+ 
+      window.location.href="login.html"
   
     }
   
