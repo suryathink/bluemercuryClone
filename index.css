@@ -1,6 +1,7 @@
 body {
     font-family: "Montserrat Light", sans-serif;
 }
+/* navbar start */
 #navigation-links {
     display: flex;
     width: 95%;
@@ -33,7 +34,7 @@ body {
     margin: auto;
     margin-top: 20px;
 }
-a{
+#navbar a{
     cursor: pointer;
     text-decoration: none;
     color : #12284c;
@@ -97,8 +98,8 @@ button {
     height: 410px;
     border: .1px solid #E0E0E0;
 }
-
-/* slider */
+/* navbaar end */
+/* slider row*/
 #slider{
     overflow: hidden;
     position: relative;
@@ -208,9 +209,77 @@ Start: New Arrivals
     width: 70%;
     margin: auto 100px;
 }
+/* mid Image */
+#midimage{
+    display: flex;
+    justify-content: space-around;
+}
+#midimage>div{
+    width: 50%;
 
+}
+#midimage>div>img{
+    width: 100%;
+}
+#midimage>div+div{
+    /* text-align: center; */
+   align-items: center;
+   margin: auto;
+   margin-left: 80px;
+   color: #12284c;
+}
+#midsecondimg{
+    height: 300px;
+    width: 100%;
+    background-image: url("https://cdn.shopify.com/s/files/1/0283/0185/2747/files/holiday-events-fullwidth-mob.jpg?v=1668805579");
+    text-align: center;
+    margin-top: 5%;
+    align-items: center;
+}
+#midsecondimg a{
+    color: white;
+}
+#midsecondimg div{
+    align-items: center;
+    color: white;
+    text-align: center;
+   
+}
+#midimage_3{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 5%;
+}
+#midimage_3 div{
+    width: 50%;
 
-/* Part Below First Slider */
+}
+#midimage_3 img{
+    width: 100%;
+}
+#midimage_3 >div{
+    text-align: right;
+   align-items: center;
+   margin: auto;
+   margin-right: 80px;
+   color: #12284c;
+}
+#bottomimg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+    margin-bottom:4%;
+}
+#bottomimg>div{
+    width: 49%;
+
+}
+#bottomimg>div img{
+    width: 100%;
+}
+#bottomimg>div h1,p{
+    color: #12284C;
+}
 /* <!-- Footer Starts here --> */
 .footer-part {
     display: flex;
@@ -294,10 +363,10 @@ Start: New Arrivals
 #arrow-submit-btn:hover {
     cursor: pointer;
 }
-a{
+.footer a{
     font-size: 14px;
 }
-p{
+.footer p{
     font-size: 15px;
     color: #12284c;
 }

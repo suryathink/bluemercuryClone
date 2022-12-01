@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=\, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <!-- <link rel="script" href="index.js"> -->
   <!-- // icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -43,13 +44,13 @@
           <i class="fa-regular fa-circle-user"></i>
 
         </div>
-        <div> <a href="siginUp.html">SIGN IN/UP</a></div>
+        <div> <a href="signup.html">SIGN IN/UP</a></div>
       </div>
       <div class="heading_one" onclick="window.location.href = 'cart.html'">
         <div>
           <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
         </div>
-        <div> <a href="">BAG</a></div>
+        <div> <a href="cart.html">BAG</a></div>
       </div>
     </div>
     <div class="logo"><img id="img-click"
@@ -71,10 +72,10 @@
     <!-- Hover Start -->
     <div id="shop_hover">
       <div id="first" class="one">
-        <p><a href="">SKIN CARE</a></p>
-        <p><a href="">MAKEUP</a></p>
-        <p><a href="">BATH AND BODY</a></p>
-        <p><a href="">HAIR</a></p>
+        <p><a href="product.html">SKIN CARE</a></p>
+        <p><a href="product.html">MAKEUP</a></p>
+        <p><a href="product.html">BATH AND BODY</a></p>
+        <p><a href="product.html">HAIR</a></p>
         <p><a href="">SUN AND TAN</a></p>
         <P><a href="">SCENTS & HOME</a></P>
         <P><a href="">MEN</a></P>
@@ -83,20 +84,20 @@
       <div id="second" class="two"></div>
       <div id="third" class="one">
         <P style="color:rgba(18, 40, 76, 0.6);">BY CATEGORY</P>
-        <P><a href="">Shop All</a></P>
-        <P><a href="">Cleaners</a></P>
-        <p><a href="">Eye Care</a></p>
-        <p><a href="">Masks</a></p>
+        <P><a href="product.html">Shop All</a></P>
+        <P><a href=" product.html">Cleaners</a></P>
+        <p><a href="product.html">Eye Care</a></p>
+        <p><a href="product.html">Masks</a></p>
         <p><a href="">Sets</a></p>
         <p><a href="">Sun Care</a></p>
         <p><a href="">Tools & Accessories</a></p>
       </div>
       <div id="fourth" class="one">
         <p style="color:rgba(18, 40, 76, 0.6);">FEATURED</p>
-        <p><a href="">Best Seller</a></p>
-        <p><a href="">New Arrivals</a></p>
-        <p><a href="">Anti-Aging</a></p>
-        <p><a href="">Antioxidants</a></p>
+        <p><a href="product.html">Best Seller</a></p>
+        <p><a href="product.html">New Arrivals</a></p>
+        <p><a href="product.html">Anti-Aging</a></p>
+        <p><a href="product.html">Antioxidants</a></p>
         <p><a href="">Skincare Tools</a></p>
         <p><a href="">Supplements</a></p>
         <p><a href="">Travel Size</a></p>
@@ -126,74 +127,90 @@
       <div>FREE SHIPPING FOR BLUEREWARDS MEMBERS ></div>
     </figure>
   </div>
-  <!-- image Slider -->
-  <div>
-    <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/hp-hero-holiday-party-2022-hero-des-2_1300x.jpg?v=1668117635" alt="">
-  </div>
-  <div>
-    <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/holiday-gift-guide-hero-des-video-poster_1300x.jpg?v=1666661522" alt="">
-  </div>
-  <div>
-    <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/dyson-november-2022-hp-hero-des_1300x.jpg?v=1668713794" alt="">
-  </div>
-  <!-- <div id="bluewards"></div> -->
-    <!-- <div class="slider">
-      <div class="slides">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
-          <input type="radio" name="radio-btn" id="radio5" />
-          <input type="radio" name="radio-btn" id="radio6" />
+  
+    <!--Carousel section-->
+     <div class="carousel-section">
+      <div class="announcement-bar" id="slide-text"></div>
+      <div class="best-sellers" id="slide-img"></div>
+    </div> 
 
-          <div class="slide first">
-              <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/m61-powerglow-peel-xs-hero-des_3b9c84ba-cd24-40ea-bd8e-9e6dd17ec106.jpg?v=1628532939" alt="" />
-          </div>
+    <!-- Wishlist overlay div -->
+    <div id="super-wishlist-box">
+      <div id="bg" onclick="hideOverlay()"></div>
+      <div id="wishlist-box-overlay"></div>
+    </div> 
 
-          <div class="slide">
-              <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/loyalty-3x-hero-des-2.jpg?v=1629208453" alt="" />
-          </div>
-          <div class="slide">
-              <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/coop-kiehls-hero-des.jpg?v=1628532990" alt="" />
-          </div>
-          <div class="slide">
-              <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/m61-powerglow-peel-xs-hero-des_3b9c84ba-cd24-40ea-bd8e-9e6dd17ec106.jpg?v=1628532939" alt="" />
-          </div>
-          <div class="slide">
-              <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/loyalty-3x-hero-des-2.jpg?v=1629208453" alt="" />
-          </div>
-          <div class="slide">
-              <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/coop-kiehls-hero-des.jpg?v=1628532990" alt="" />
-          </div>
-    </div>
-  </div> -->
-  <!--image slider end here -->
-  <div class="product-disp new-arrivals">
-    <p id="arrival">NEW ARRIVALS</p>
-    <div class="product-image-slider">
-      <div id="prevSlider-btn">
-        <!--Previous btn-->
-        <img
-          src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 21'%3E%3Cpath fill='none' stroke='%23666' stroke-width='1.25' d='M10.5.5l-10 10 10 10'/%3E%3C/svg%3E"
-          alt=""
-        />
-      </div>
+    <!--Manual image slider-->
+    <div class="product-disp new-arrivals">
+      <p id="arrival">BEST SELLER</p>
+      <div class="product-image-slider">
+        <div id="prevSlider-btn">
+          <!--Previous btn-->
+          <img
+            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 21'%3E%3Cpath fill='none' stroke='%23666' stroke-width='1.25' d='M10.5.5l-10 10 10 10'/%3E%3C/svg%3E"
+            alt=""
+          />
+        </div>
 
-      <div id="products"></div>
+        <div id="products"></div>
 
-      <div id="nextSlider-btn">
-        <!--Next btn-->
-        <img
-          src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 21'%3E%3Cpath fill='none' stroke='%23666' stroke-width='1.25' d='M.5.5l10 10-10 10'/%3E%3C/svg%3E"
-          alt=">"
-        />
+        <div id="nextSlider-btn">
+          <!--Next btn-->
+          <img
+            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 21'%3E%3Cpath fill='none' stroke='%23666' stroke-width='1.25' d='M.5.5l10 10-10 10'/%3E%3C/svg%3E"
+            alt=">"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <p>Amit</p>
+    
+    <div id="midimage">
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/Homepage_Hero_Slip_Group_Shot_2_1200x1200-9c6bd91_1_x650.jpg?v=1669129121"
+         alt="">
+      </div>
+      <div>  SLIP
+       <h2> Award-Winning Silk Scrunchies</h2>
+       <p> Spun from silk and designed to be gentle on hair. </p>
+        <a href="index.html">SHOP NOW</a> 
+      </div>
+    </div>
+    <div id="midsecondimg">
+       <div><h1>Visit Us In Store</h1></div>
+      <div><h3> Join us for personal shopping appointments, free gift boxing, and expert advice on <br> bespoke gift assortments, holiday party looks, and more!
+      </h3></div>
+      <div><a href="index.html">BOOK YOUR ONE-ON-ONE APPOINTMENT</a></div>
+    </div>
+    <div id="midimage_3">
+      <div>  
+        <h2>SLIP</h2>
+        <h2> Award-Winning Silk Scrunchies</h2>
+        <p> Spun from silk and designed to be gentle on hair. </p>
+        <h2><a href="index.html">SHOP NOW</a> </h2>
+      </div>
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/Absolute-Holiday-Gift-Set-BM_x650.png?v=1669762261"
+        alt="">
+      </div>
+    </div>
+    <div id="bottomimg">
+      <div>
+       <a href="product.html"> <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/Molton_Brown_Side_by_Side_67ebb9d4-8317-4e27-9ff2-293de10dc15f.jpg?v=1669761230&width=832" alt="">
+       </a>
+        <h1>Embrace the Season</h1>
+           <p> Treat your loved ones to these unexpected yet always luxurious stocking fillers</p>
+           <a href="">SHOP MOLTON BROWN</a>
+      
+      </div>
+      <div>
+        <a href="product.html"><img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/NB-DIAMOND-EXTREME-CREAM-Bluemercury-Holiday-1000x625.jpg?v=1669761658&width=832" alt="">
+        </a> <h1>Diamond Extreme Rich Texture</h1>
+           <p>A ground-breaking skincare solution to recharge your skin for superior age-defying results.</p>
+           <a href="">SHOP MOLTON BROWN</a> </div>
+    </div>
+  <!-- <p>Amit</p> -->
+
   <!-- Footer Starts here -->
- 
-
   <footer class="footer-part">
     <div class="newsletter">
       <p>Get Expert Beauty Insight & Offers</p>
@@ -333,20 +350,4 @@
 </body>
 
 </html>
-<script>
-  var btn = document.getElementById("disappear")
-  function divAppear() {
-    var cll = document.getElementById("shop_hover");
-    cll.style.display = "grid";
-    cll.style.background = "white";
-  }
-  btn.addEventListener("mouseover", divAppear);
-
-  // work on div of shop_hover =>
-
-  var cll = document.getElementById("shop_hover");
-  function divDisappear() {
-    cll.style.display = "none";
-  }
-  cll.addEventListener("mouseleave", divDisappear);
-</script>
+<script src="index.js"></script>
