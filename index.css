@@ -1,0 +1,394 @@
+body {
+    font-family: "Montserrat Light", sans-serif;
+}
+/* navbar start */
+#navigation-links {
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+.heading_one {
+    display: flex;
+}
+.heading_one>div:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    color : #12284c;
+    font-weight: 400;
+}
+#navigation-links>div:nth-child(1) {
+    flex-grow: 1;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    height: 50px;
+}
+#shoplink{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+#navbar a{
+    cursor: pointer;
+    text-decoration: none;
+    color : #12284c;
+    /* color: rgba(18, 40, 76); */
+}
+i{
+    margin-top:8px ;
+    cursor: pointer;
+
+}
+.productlink{
+    text-decoration: none;
+    font-weight:100;
+    color:  rgba(18, 40, 76);
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    background-color: white;
+    border: none;
+    
+}
+a:hover {
+    color: rgba(18, 40, 76);
+    font-weight: 400;
+}
+#shop {
+    text-decoration: none;
+  
+}
+button {
+    border: none;
+    background: none;
+}
+
+#shop_hover {
+    width: 90%;
+    display: none;
+    margin: auto;
+    grid-template-columns: 200px 50px 200px 200px 300px;
+    padding-left: 200px;
+    position: fixed;
+    top: 140px;
+    z-index: 2;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+
+#shop_hover a {
+    text-decoration: none;
+    color: rgba(18, 40, 76, 0.6);
+    font-size: 14px; 
+}
+
+#shop_hover a:hover {
+    color: #12284c;
+    size: 10px;
+  }
+.two {
+    width: 0%;
+    height: 410px;
+    border: .1px solid #E0E0E0;
+}
+/* navbaar end */
+/* slider row*/
+#slider{
+    overflow: hidden;
+    position: relative;
+    top: 15px;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure div {
+    height: 30px;
+    float: left;
+    width: 20%;
+    text-align: center;
+   font-size: 11px;
+    line-height: 30px;
+    background: #d2a83c;
+    color: #12284c;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+/* slider end 
+Start: New Arrivals
+*************************/
+
+.new-arrivals #arrival{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 3%;
+    padding: 2%;
+}
+
+.product-disp {
+    padding: 2%;
+}
+
+.product-image-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto 9%;
+}
+
+.product-image-slider > #prevSlider-btn,#nextSlider-btn {
+    width: 50px;
+    cursor: pointer;
+}
+
+#products {
+    display: flex;
+    text-align: center;
+}
+
+#products img {
+    width: 90%;
+}
+
+.description-container {
+    display: flex;
+    align-items: center;
+    color: #12284C;
+    font-size: 20px;
+}
+
+.description-container > * {
+    flex-basis: 100%;
+    margin: 10px;
+    padding: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.extra-img {
+    width: 70%;
+    margin: auto 100px;
+}
+/* mid Image */
+#midimage{
+    display: flex;
+    justify-content: space-around;
+}
+#midimage>div{
+    width: 50%;
+
+}
+#midimage>div>img{
+    width: 100%;
+}
+#midimage>div+div{
+    /* text-align: center; */
+   align-items: center;
+   margin: auto;
+   margin-left: 80px;
+   color: #12284c;
+}
+#midsecondimg{
+    height: 300px;
+    width: 100%;
+    background-image: url("https://cdn.shopify.com/s/files/1/0283/0185/2747/files/holiday-events-fullwidth-mob.jpg?v=1668805579");
+    text-align: center;
+    margin-top: 5%;
+    align-items: center;
+}
+#midsecondimg a{
+    color: white;
+}
+#midsecondimg div{
+    align-items: center;
+    color: white;
+    text-align: center;
+   
+}
+#midimage_3{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 5%;
+}
+#midimage_3 div{
+    width: 50%;
+
+}
+#midimage_3 img{
+    width: 100%;
+}
+#midimage_3 >div{
+    text-align: right;
+   align-items: center;
+   margin: auto;
+   margin-right: 80px;
+   color: #12284c;
+}
+#bottomimg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+    margin-bottom:4%;
+}
+#bottomimg>div{
+    width: 49%;
+
+}
+#bottomimg>div img{
+    width: 100%;
+}
+#bottomimg>div h1,p{
+    color: #12284C;
+}
+/* <!-- Footer Starts here --> */
+.footer-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 30px;
+    border-top: 2px solid #dcdcdc;
+}
+
+.newsletter {
+    margin: 0px 20px;
+    max-width: 50ch;
+    min-width: 30ch;
+    line-height: 30px;
+}
+
+.icons {
+    display: flex; 
+    justify-content: space-between;
+    max-width: 70%;
+    /* margin: auto; */
+    /* font-size: 20px; */
+    color: #12284c;
+}
+
+.footer-navwrap {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: space-between;
+    min-width: 600px;
+}
+
+.footer-navwrap > * {
+    justify-items: space-between;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    color: #12284c;
+    font-weight: normal;
+}
+
+.footer-navwrap h2 {
+    font-weight: normal;
+    font-size: 12px;
+    font-family: Montserrat light, sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-navwrap > div > * > * {
+     margin: 5px auto; 
+}
+
+.footer-navwrap ul,
+.footer-navwrap li a {
+    color: #12284c;
+    list-style-type: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.footer-mail {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #12284c;
+}
+
+.footer-mail:focus {
+    outline: none;
+}
+
+#arrow-submit-btn {
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    background-color: white;
+}
+
+#arrow-submit-btn:hover {
+    cursor: pointer;
+}
+.footer a{
+    font-size: 14px;
+}
+.footer p{
+    font-size: 15px;
+    color: #12284c;
+}
+#hide-overlay {
+    color: #12284c;
+    border: 2px solid #12284c;
+    border-radius: 10px;
+    width: 45%;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#hide-overlay:hover {
+    cursor: pointer;
+    background-color: #12284c;
+    color: white;
+}
+.icons img{
+    width: 25px;
+    margin-left:-5px ;
+    color: #12284c;
+}
+
+/* <!-- Footer end here --> */
