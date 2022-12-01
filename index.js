@@ -1,3 +1,13 @@
+// To get name of signed In user
+let x=localStorage.getItem("user");
+
+if (x == null){
+  document.getElementById("showEmailUser").textContent = "SIGN IN/UP";
+} else {
+  document.getElementById("showEmailUser").textContent = x;
+}
+
+
 // navbar start
 var btn = document.getElementById("disappear")
 function divAppear() {

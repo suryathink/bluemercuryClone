@@ -1,14 +1,7 @@
 var cartArr= JSON.parse(localStorage.getItem("cart")) || [];
 document.getElementById("cart-count").textContent = cartArr.length;
-
-// Surya new code for sign in signup
-let x=localStorage.getItem("user");
-
-if (x == null){
-  document.getElementById("showEmailUser").textContent = "SIGN IN/UP";
-} else {
-  document.getElementById("showEmailUser").textContent = x;
-}
+  // let x=localStorage.getItem("user")
+  // document.getElementById("showEmailUser").textContent = x;
 // // if(document.getElementById("cart-count")){
 // //   document.getElementById("cart-count").textContent = cartArr.length;
 // // }
