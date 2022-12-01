@@ -633,10 +633,10 @@
                     <i class="fa-regular fa-circle-user"></i>
 
                 </div>
-                <div> <a href="signup.html">SIGN IN/UP</a></div>
-                <br>
-                <br>
-                 <p id="showEmailUser"></p>
+                <div>  <a id="showEmailUser" href="signup.html">SIGN IN/UP</a></div>
+                <!-- <br> -->
+                <!-- <br> -->
+                 <!-- <p id="showEmailUser"></p> -->
             </div>
             <div class="heading_one" onclick="window.location.href = 'cart.html'">
                 <div>
@@ -924,12 +924,13 @@
         }).map(function (elem) {
             if (elem.pass == pass) {
                 document.getElementById("wrongPass").textContent = "Sign in Successful"
-                document.getElementById("showUsername").textContent = "Logged in as  "+mail;
-              
+                document.getElementById("showUsername").textContent = "Logged in as  "+mail+" ";
+;
+              console.log(elem);
                 // showEmailUser  
-                document.getElementById("showEmailUser").textContent = mail; 
+                document.getElementById("showEmailUser").textContent = elem.firstName+" "; 
                 // storing emailID as user 
-                localStorage.setItem("user",mail)  
+                localStorage.setItem("user",elem.firstName)  
                 console.log(localStorage.getItem("user")); 
             } else {
                 document.getElementById("wrongPass").textContent = "Wrong Credentials"
