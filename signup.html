@@ -643,8 +643,7 @@
                 <div> <a href="cart.html">BAG</a></div>
             </div>
         </div>
-        <div class="logo"><img id="img-click"
-                src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blm_36dad4a4-9b14-4ef8-9509-6a593f135aae_416x@2x.png?v=1588538421">
+        <div class="logo"><img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blm_36dad4a4-9b14-4ef8-9509-6a593f135aae_416x@2x.png?v=1588538421">
         </div>
         <div id="shoplink">
             <!-- <div><button class="productlink"><a href>SHOP</a></button></div> -->
@@ -973,6 +972,12 @@
       document.getElementById("Creat_Password").value=null;
   
     }
-  
+    var images = document.getElementsByTagName("img");
+        for(var i = 0; i < images.length; i++) {
+         var image = images[0];
+        image.onclick = function(event) {
+           window.location.href = this.id + 'index.html';
+      };
+    }
   
   </script>
