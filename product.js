@@ -306,7 +306,7 @@ for(let i=0;i<wbtn.length;i++){
    localStorage.setItem("WishList",JSON.stringify(WishList));
 
    document.getElementById("cart-count11").textContent = WishList.length;
-   alert("Click On Heart!");
+   alert("Item Added in WishList!");
  });
 }
 
