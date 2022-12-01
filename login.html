@@ -749,6 +749,11 @@
             <a href="signup.html">Create one</a>
         </div>
 
+        
+        <div class="centre">
+            <span style="cursor: pointer ;" onclick="logout()" >Click to LogOut</span>
+        </div>
+
     </form>
     
 
@@ -890,6 +895,12 @@
 </html>
 
 <script>
+//   user
+    function logout(){
+        localStorage.removeItem("user");
+        alert("Logged Out Successfully")
+    }
+   
 
     var btn = document.getElementById("disappear")
     function divAppear() {
