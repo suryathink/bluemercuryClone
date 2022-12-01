@@ -7,6 +7,7 @@ if (x == null){
 } else {
   document.getElementById("showEmailUser").textContent = x;
 }
+
 var mensData = [
   {
     image_url:
@@ -221,44 +222,50 @@ var mensData = [
 ];
 
 
-mensData.map(function(elem){
-  var div = document.createElement("div");
-  div.setAttribute("class","card");
 
-  var img = document.createElement("img");
-  img.setAttribute("src",elem.image_url);
 
-  var name = document.createElement("p");
-  name.textContent=elem.name;
-  name.setAttribute("class","name");
+displayProducts(mensData);
+
+function displayProducts(mensData){
+  mensData.map(function(elem){
+    var div = document.createElement("div");
+    div.setAttribute("class","card");
   
-  var details=document.createElement("p");
-  details.textContent=elem.details;
-  details.setAttribute("class","details");
-
-  var priceElement = document.createElement("p");
-  priceElement.setAttribute("class","price");
-  priceElement.textContent = "$"+" "+elem.price;
-
-  var cartbtn = document.createElement("button");
-  cartbtn.textContent="Add to Bag";
-  cartbtn.setAttribute("class","cartbtn");
-  cartbtn.addEventListener("click",function (){
-    addToCart(elem);
-
-   });
-
-
-  var wbtn=document.createElement("button");
-  wbtn.textContent="WishList";
-  wbtn.setAttribute("class","wbtn");
-
- 
-
-  div.append(img,name,details,priceElement,cartbtn,wbtn);
-  document.getElementById("parent").append(div); 
-});
- 
+    var img = document.createElement("img");
+    img.setAttribute("src",elem.image_url);
+  
+    var name = document.createElement("p");
+    name.textContent=elem.name;
+    name.setAttribute("class","name");
+    
+    var details=document.createElement("p");
+    details.textContent=elem.details;
+    details.setAttribute("class","details");
+  
+    var priceElement = document.createElement("p");
+    priceElement.setAttribute("class","price");
+    priceElement.textContent = "$"+" "+elem.price;
+  
+    var cartbtn = document.createElement("button");
+    cartbtn.textContent="Add to Bag";
+    cartbtn.setAttribute("class","cartbtn");
+    cartbtn.addEventListener("click",function (){
+      addToCart(elem);
+  
+     });
+  
+  
+    var wbtn=document.createElement("button");
+    wbtn.textContent="WishList";
+    wbtn.setAttribute("class","wbtn");
+  
+   
+  
+    div.append(img,name,details,priceElement,cartbtn,wbtn);
+    document.getElementById("parent").append(div); 
+  });
+   
+}
 
 //SuryaCode
 var cartArr= JSON.parse(localStorage.getItem("cart")) || [];
@@ -366,4 +373,24 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+
+
+function handlenamesort(){
+  document.getElementById("parent").innerHTML="";
+  let fill=document.getElementById("sortnames").value;
+  console.log(fill);
+  if(fill=="Plth"){
+     var sortPlth = mensData.sort(function (a,b){
+      return a.price-b.price;
+     })
+     displayProducts(sortPlth)
+    }  else if (fill =="phtl"){
+      var sortP = mensData.sort(function (a,b){
+        return b.price - a.price;
+    });
+    displayProducts(sortP)
+  } else {
+   window.location.reload();
+  }
 }
