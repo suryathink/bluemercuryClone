@@ -8,6 +8,10 @@ if (x == null){
   document.getElementById("showEmailUser").textContent = x;
 }
 
+function pimage(){
+  window.location.href ='index.html';
+}
+
 var mensData = [
   {
     image_url:
@@ -317,6 +321,8 @@ for(let i=0;i<wbtn.length;i++){
            window.location.href = this.id + 'index.html';
       };
     }
+
+
 
 
       var images = document.getElementsByTagName("img");
