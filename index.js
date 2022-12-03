@@ -124,7 +124,8 @@ function productShow(startIndex, numOfProd) {
 
       let img = document.createElement('img');
       img.src = productsData[i].image;
-
+      // img.style.display ="flex"
+      // img.style.flex="wrap"
       let p_name = document.createElement('p');
       p_name.innerHTML = productsData[i].name;
       // p.style.cursor="pointer"

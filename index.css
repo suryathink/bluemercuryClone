@@ -168,6 +168,7 @@ Start: New Arrivals
 
 .product-image-slider {
     display: flex;
+    flex: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -181,6 +182,7 @@ Start: New Arrivals
 
 #products {
     display: flex;
+    flex: wrap;
     text-align: center;
 }
 
@@ -190,6 +192,7 @@ Start: New Arrivals
 
 .description-container {
     display: flex;
+    flex: wrap;
     align-items: center;
     color: #12284C;
     font-size: 20px;
@@ -212,6 +215,7 @@ Start: New Arrivals
 /* mid Image */
 #midimage{
     display: flex;
+    /* flex: wrap; */
     justify-content: space-around;
 }
 #midimage>div{
@@ -250,6 +254,7 @@ Start: New Arrivals
     display: flex;
     /* justify-content: space-around; */
     margin-top: 5%;
+    /* flex: wrap; */
 }
 #midimage_3 div{
     width: 50%;
@@ -267,6 +272,7 @@ Start: New Arrivals
 }
 #bottomimg{
     display: flex;
+    flex: wrap;
     justify-content: space-between;
     margin-top: 4%;
     margin-bottom:4%;
@@ -284,6 +290,7 @@ Start: New Arrivals
 /* <!-- Footer Starts here --> */
 .footer-part {
     display: flex;
+    flex: wrap;
     flex-direction: row;
     justify-content: space-around;
     padding: 15px 30px;
@@ -299,6 +306,7 @@ Start: New Arrivals
 
 .icons {
     display: flex; 
+    /* flex: wrap; */
     justify-content: space-between;
     max-width: 70%;
     /* margin: auto; */
@@ -392,4 +400,71 @@ Start: New Arrivals
     color: #12284c;
 }
 
+@media screen and (max-width: 700px) {
+    .specials {
+        flex-direction: column;
+    }
+
+    .description-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    .footer-part {
+        flex-direction: column;
+    }
+
+    .footer-navwrap {
+        flex-direction: column;
+    }
+
+    .footer-navwrap ul {
+        display: none;
+    }
+}
 /* <!-- Footer end here --> */
+@media screen and (max-width: 700px){
+    #shoplink{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #midimage{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #midimage_3{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+    }
+    #bottomimg{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .description-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    /* #navigation-links {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    } */
+    #slide-img{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #slide-text{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
