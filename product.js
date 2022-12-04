@@ -396,7 +396,31 @@ function handlenamesort(){
         return b.price - a.price;
     });
     displayProducts(sortP)
+  } else if (fill == "NewArrivals"){
+    console.log(fill);
+    // let x= mensData.name.sort();
+    // return x
+     var x = mensData.sort(function (a,b){
+      if (a.name>b.name){
+        console.log("1");
+        return 1;
+    
+      }
+       if (a.name < b.name) {
+        console.log("0");
+        return -1;
+       
+      } 
+      return 0;
+
+
+     });
+    displayProducts(x)
   } else {
-   window.location.reload();
+    window.location.reload();
   }
+  
+  // {
+  //  window.location.reload();
+  // }
 }
