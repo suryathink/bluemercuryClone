@@ -3,9 +3,6 @@ BLUEMERCURY CLONE
 Deployed Link-1.
 https://suryathink.github.io/bluemercuryClone/
 
-Deployed Link-2.
-https://glistening-maamoul-042c23.netlify.app/
-
 
 This is an attempt to clone the Bluemercury.com website using just HTML,CSS & JavaScript Only.
 
