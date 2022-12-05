@@ -9,6 +9,8 @@ https://glistening-maamoul-042c23.netlify.app/
 
 This is an attempt to clone the Bluemercury.com website using just HTML,CSS & JavaScript Only.
 
+We have successfully maintained the UserFlow on our cloned website.
+
 We are the team of 4 people.
 
 1)Amit Sisodiya	
