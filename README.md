@@ -3,9 +3,13 @@ BLUEMERCURY CLONE
 This is an attempt to clone the Bluemercury.com website.
 
 We are the team of 4 people.
+
 1)Amit Sisodiya	
+
 2)Shubham Kailas Tribhuvan
+
 3)Surya Prakash Singh
+
 4)Arun Tiwari
 
 We have been given the task to clone the bluemarcury website in 1 week at the end of unit-4 at Masai School with the concepts we have learned(like HTML,CSS,JavaScript,DOM-Manipulation etc) in unit-4. 
