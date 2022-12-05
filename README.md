@@ -1,3 +1,5 @@
+BLUEMERCURY CLONE
+
 This is an attempt to clone the Bluemercury.com website.
 
 We are the team of 4 people.
