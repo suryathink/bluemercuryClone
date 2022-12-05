@@ -7,7 +7,7 @@ Deployed Link-2.
 https://glistening-maamoul-042c23.netlify.app/
 
 
-This is an attempt to clone the Bluemercury.com website.
+This is an attempt to clone the Bluemercury.com website using just HTML,CSS & JavaScript Only.
 
 We are the team of 4 people.
 
