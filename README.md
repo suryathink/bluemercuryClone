@@ -51,7 +51,9 @@ Before Ordering Product you have to Create Account and login First.
 
 For that click on the SignIn/Up section of the navbar.
 
-Here is how signin page looks 
+Here is how SignUp page looks 
+<img width="428" alt="image" src="https://user-images.githubusercontent.com/96377101/205642694-39de144c-5d90-4062-ad4f-cccb0faf614f.png">
+
 
 This is how Login Page looks like
 <img width="532" alt="image" src="https://user-images.githubusercontent.com/96377101/205637337-e12be1bd-2c5c-412d-8efe-e2138ea68a3d.png">
